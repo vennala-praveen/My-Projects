@@ -1,0 +1,100 @@
+:root{
+    --purple:#2F192E;
+    --purple-light:#30192d;
+    --dark-blue:#012677;
+    --blue:#5c65c0;
+    --skyblue:#00b4fc;
+    --light-blue:#005bc5;
+    --dark-pink:#f64c57;
+    --dark-magenta:#e21b5a;
+    --light-green:#61e2c2;
+    --light-purple:#d9abff;
+    --dark-red:#8B0000;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: poppins,sans-serif;
+}
+
+body{
+    background: linear-gradient(45deg, var(--purple),var(--purple-light));
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.profile-card{
+    background: #111;
+    width: 400px;
+    padding: 3rem;
+    border-radius: 10px;
+    min-height: 400px;
+    position: relative;
+    color: #fff;
+    margin: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-card .profile-pic{
+    margin-top: 15px;
+    overflow: hidden;
+}
+.profile-card .profile-pic img{
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+}
+.profile-card .profile-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.profile-details .intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.profile-details .intro h2{
+    margin-top: 20px;
+}
+.profile-details .intro h4{
+    background: #1d1d1d;
+    font-weight: 400;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 8px;
+}
+
+.profile-details .intro .social{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.profile-details .intro .social i{
+    color: #ddd;
+    font-size: 16px;
+    background-color: #222;
+    margin: 5px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.5s;
+}
